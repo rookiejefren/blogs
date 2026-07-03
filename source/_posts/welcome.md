@@ -17,7 +17,3 @@ description: 这是博客初始化后的第一篇文章。
 npm run server
 npm run build
 ```
-
-{% rating id:welcome-20260703 这篇文章值得几星？ %}
-
-{% vote id:welcome-20260703 这篇文章有帮助吗？ %}

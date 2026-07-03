@@ -60,7 +60,11 @@ article:
   license: false
 
 comments:
-  service:
+  service: artalk
+  comment_title: 快来参与讨论吧~
+  artalk:
+    server: https://blogs.murycarry.site/artalk
+    site: 我的博客
 
 footer:
   content: |
