@@ -1,0 +1,11 @@
+name: 博客指南
+title: 博客指南
+subtitle: Hexo + Stellar 使用说明
+description: 记录这个博客的写作、配置和发布方式。
+tags:
+  - 博客
+  - 文档
+base_dir: /wiki/guide/
+tree:
+  快速开始:
+    - index

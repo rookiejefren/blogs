@@ -1,0 +1,63 @@
+logo:
+  avatar: /avatar.png
+  title: '[{config.title}](/)'
+  subtitle: '{config.subtitle}'
+
+menubar:
+  columns: 4
+  items:
+    - id: post
+      theme: '#1BCDFC'
+      icon: solar:documents-bold-duotone
+      title: 博客
+      url: /
+    - id: wiki
+      theme: '#3DC550'
+      icon: solar:notebook-bookmark-bold-duotone
+      title: 文档
+      url: /wiki/
+    - id: archive
+      theme: '#FA6400'
+      icon: solar:archive-bold-duotone
+      title: 归档
+      url: /archives/
+    - id: about
+      theme: '#F44336'
+      icon: solar:user-bold-duotone
+      title: 关于
+      url: /about/
+
+site_tree:
+  home:
+    leftbar: welcome, recent
+    rightbar:
+  index_blog:
+    base_dir: blog
+    menu_id: post
+    leftbar: welcome, recent
+    rightbar:
+  index_wiki:
+    base_dir: wiki
+    menu_id: wiki
+    leftbar: related, recent
+    rightbar:
+  post:
+    menu_id: post
+    leftbar: related, recent
+    rightbar: toc
+  wiki:
+    menu_id: wiki
+    leftbar: tree, related, recent
+    rightbar: toc
+  page:
+    leftbar: recent
+    rightbar: toc
+
+article:
+  type: tech
+  auto_excerpt: 128
+  auto_banner: false
+  license: false
+
+comments:
+  service:
