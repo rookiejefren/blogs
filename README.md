@@ -12,9 +12,39 @@ https://blogs.murycarry.site/
 
 ```bash
 npm install
-npm run server
+npm run server:local
 npm run build
 ```
+
+本地调试请优先使用 `npm run server:local`，访问地址为：
+
+```text
+http://localhost:4000/
+```
+
+`npm run server` 会使用生产配置启动，通常只在需要完整预览线上功能时使用。
+
+### 本地调试配置
+
+本地调试配置文件为：
+
+```text
+_config.local.yml
+```
+
+本地启动命令会同时加载生产配置和本地覆盖配置：
+
+```bash
+hexo server --config _config.yml,_config.stellar.yml,_config.local.yml
+```
+
+当前本地覆盖配置会关闭以下功能，避免本地预览产生线上评论或访问记录：
+
+- 关闭 Artalk 留言评论区
+- 关闭不蒜子访问统计脚本
+- 页脚隐藏访问量/访客数展示
+
+线上构建和部署仍使用原有生产配置，不受 `_config.local.yml` 影响。
 
 ## 写文章
 

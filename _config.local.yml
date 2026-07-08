@@ -1,0 +1,13 @@
+# Local development overrides.
+# Keep production comments and visit counters disabled while previewing locally.
+
+comments:
+  service: false
+
+inject:
+  script: []
+
+footer:
+  content: |
+    本站由 [{author.name}](/) 使用 [{theme.name} {theme.version}]({theme.tree}) 主题创建。
+    本博客所有文章除特别声明外，均采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议，转载请注明出处。
